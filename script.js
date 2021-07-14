@@ -293,6 +293,10 @@ he navigator.geolocation.getCurrentPosition() method calls the callback function
     //use the public interface
     //workout.click();
   }
+  reset() {
+    localStorage.removeItem('workout');
+    location.reload();
+  }
 }
 
 const app = new App();
